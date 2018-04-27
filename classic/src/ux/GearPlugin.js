@@ -8,13 +8,13 @@ Ext.define('Gear.ux.GearPlugin', {
 
     parentGrid: null,
     dockContainer: null,
-    defaultDockContainerWidth: 30,
+    defaultDockContainerHeight: 30,
 
 
     init: function (grid) {
         this.parentGrid = grid;
         if (!this.dockHeight) {
-            this.dockHeight = this.defaultDockContainerWidth;
+            this.dockHeight = this.defaultDockContainerHeight;
         }
         var containerCfg = this.getDockContainerConfig();
         this.dockContainer = this.parentGrid.addDocked(containerCfg)[0];
